@@ -3,6 +3,7 @@ import React from 'react';
 import {AppWriteProvider, AppwriteContext} from './context/AppWriteContext';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
+import UserData from './components/UserData';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <SignUp />
         <Login />
+        <UserData />
       </KeyboardAvoidingView>
     </AppWriteProvider>
   );
